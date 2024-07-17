@@ -25,7 +25,7 @@ public class ResultServlet extends HttpServlet{
 		System.out.println(userName);
 		System.out.println(userAge);
 		
-		int userAgeNumber = Integer.parseInt(userAge);
+		int Age = Integer.parseInt(userAge);
 		
 		resp.setContentType("text/html;charset=utf-8");
 	      PrintWriter out = resp.getWriter();
@@ -38,7 +38,7 @@ public class ResultServlet extends HttpServlet{
 	      out.append("<body>");
 	      out.append("<h1>Result Page</h1>");
 	      out.append("<p>Name : " + userName + "</p>");
-	      out.append("<p>Age : " + (userAgeNumber - 2) + "</p>");
+	      out.append("<p>Age : " + (Age - 2) + "</p>");
 	      
 	      
 	      out.append("</form>");
